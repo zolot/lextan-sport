@@ -93,13 +93,13 @@ footer span {
 #main {
   position: relative;
   color: #fff;
-  background-image: url("../../img/main/main-bg.png");
+  background-image: url("../img/main/main-bg.png");
   background-position: center;
   background-size: cover;
 }
 
 #main header, #main footer {
-  background-image: url("../../img/main/nav-bg.png");
+  background-image: url("../img/main/nav-bg.png");
 }
 
 #main .logo {
@@ -119,14 +119,16 @@ footer span {
 
 #about-us {
   background-color: #181b35;
-  background-image: url("../../img/about-us/about-us-bg.png");
+  background-image: url("../img/about-us/about-us-bg.png");
+  background-position: center;
   position: relative;
   color: #fff;
+  min-width: 900px;
   background-size: cover;
 }
 
 #about-us header, #about-us .about-info-wrap {
-  background-image: url("../../img/about-us/about-text-bg.png");
+  background-image: url("../img/about-us/about-text-bg.png");
 }
 
 #about-us footer {
