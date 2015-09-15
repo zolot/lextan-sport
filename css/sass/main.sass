@@ -1,0 +1,108 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 1000px
+	margin: 0
+	padding: 0
+	position: relative
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+a 
+	text-decoration: none
+header, footer
+		width: 100%
+		position: absolute
+		height: 35px
+header
+	top: 0
+.content-wrap
+	margin: 0 auto
+	position: relative
+	width: 1000px
+	box-sizing: border-box
+	overflow: hidden
+	nav 
+		float: left
+		ul 
+			margin: 0
+			padding: 0
+			li 
+				list-style-type: none
+				display: inline-block
+				a 
+					font-size: 13px
+					color: #fff
+					padding: 0 17px
+					line-height: 35px
+	.phone-wrap
+		float: right
+		text-align: right
+		margin-right: 17px
+		span 
+			font-size: 14px
+		a 
+			font-size: 9px
+			border-bottom: 1px #fff dashed
+			display: inline-block
+			margin: 0
+			color: #fff
+footer 
+	text-align: center
+	bottom: 0
+	span 
+		line-height: 35px
+		font-size: 9px
+#main
+	position: relative	
+	color: #fff
+	background-image: url("../../img/main/main-bg.png")
+	background-position: center
+	background-size: cover
+	header, footer
+		background-image: url("../../img/main/nav-bg.png")
+	.logo 
+		position: absolute
+		top: 50%;
+		margin-top: -165px;
+		left: 50%;
+		margin-left: -455px;
+	.tree
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+#about-us
+	background-color: #181b35
+	background-image: url("../../img/about-us/about-us-bg.png")
+	position: relative	
+	color: #fff
+	background-size: cover
+	header, .about-info-wrap
+		background-image: url("../../img/about-us/about-text-bg.png")
+	footer
+		background-color: #232741	
+	.about-info-wrap
+		padding: 50px
+		margin: 550px auto 120px
+		width: 100%
+		box-sizing: border-box
+		p 
+			color: #fff
+			font-size: 16px
+		h2 
+			color: #a2d6fd
+			font-size: 38px
+			text-transform: uppercase
+
+
+.hidden
+	display: none
