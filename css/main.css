@@ -257,7 +257,7 @@ footer span {
   line-height: 26px;
 }
 
-#products, #polish, #contacts {
+#products, #polish, #contacts, #gallery {
   background-position: center;
   position: relative;
   color: #fff;
@@ -265,11 +265,11 @@ footer span {
   background-size: cover;
 }
 
-#products header, #polish header, #contacts header {
+#products header, #polish header, #contacts header, #gallery header {
   background-image: url("../img/products/products-nav-bg.png");
 }
 
-#products footer, #polish footer, #contacts footer {
+#products footer, #polish footer, #contacts footer, #gallery footer {
   background-image: url("../img/products/products-footer-bg.png");
 }
 
@@ -277,6 +277,32 @@ footer span {
   background-image: url("../img/contacts/contacts-bg.jpg");
   background-position: center bottom;
   position: relative;
+}
+
+#contacts .bred-wrap {
+  position: absolute;
+  bottom: 10%;
+  left: 18%;
+  width: 15%;
+  text-align: center;
+}
+
+#contacts .bred-wrap img {
+  display: inline-block;
+}
+
+#contacts .bred-wrap .bred-1 {
+  width: 58%;
+}
+
+#contacts .bred-wrap .bred-2 {
+  width: 39%;
+  vertical-align: 150%;
+}
+
+#contacts .bred-wrap .bred-3 {
+  width: 75%;
+  margin-top: -12px;
 }
 
 #contacts .left-cosmonaut, #contacts .right-cosmonaut {
@@ -309,6 +335,7 @@ footer span {
   box-sizing: border-box;
   color: #fff;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 #contacts .contacts-info-wrap .contacts {
@@ -411,7 +438,7 @@ footer span {
 
 #contacts .jspContainer {
   width: 100% !important;
-  height: 100% !important;
+  height: 95% !important;
 }
 
 #contacts .jspPane {
@@ -419,16 +446,16 @@ footer span {
 }
 
 #contacts .jspVerticalBar {
-  height: 100% !important;
+  height: 95% !important;
   border: 1px #ec880a solid;
   background: transparent !important;
   width: 8px;
   padding: 0 1px;
   text-align: center;
+  overflow: hidden;
 }
 
 #contacts .jspTrack {
-  height: 490px !important;
   background: transparent !important;
 }
 
@@ -490,13 +517,253 @@ footer span {
   margin-left: 20px;
 }
 
-#main-products header, #parket header {
+#main-products header, #parket header, #lentan-fix header {
   background-image: url("../img/main/nav-bg.png");
 }
 
-#main-products footer, #parket footer {
+#main-products footer, #parket footer, #lentan-fix footer {
   background-color: #452b0e;
   color: #fff;
+}
+
+#main-products, #lentan-fix {
+  background-image: url("../img/parket/wood-texture.jpg");
+}
+
+#main-products .gym, #lentan-fix .gym {
+  width: 100%;
+}
+
+#main-products .switcher-wrap {
+  min-height: 100px;
+  text-align: center;
+  margin-top: -30px;
+}
+
+#main-products .switcher-wrap .switcher {
+  position: absolute;
+  left: 50%;
+  margin-left: -110px;
+  z-index: 1500;
+}
+
+#main-products .switcher-wrap .switcher ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-products .switcher-wrap .switcher ul li {
+  float: left;
+}
+
+#main-products .switcher-wrap .switcher ul li.active {
+  display: block;
+}
+
+#main-products .switcher-wrap .switcher ul li.active .slide-1,
+#main-products .switcher-wrap .switcher ul li:hover .slide-1 {
+  background: url("../img/parket/swich-border-1.png") no-repeat top center;
+}
+
+#main-products .switcher-wrap .switcher ul li.active .slide-2,
+#main-products .switcher-wrap .switcher ul li:hover .slide-2 {
+  background: url("../img/parket/swich-border-2.png") no-repeat top center;
+}
+
+#main-products .switcher-wrap .switcher ul li.active .slide-3,
+#main-products .switcher-wrap .switcher ul li:hover .slide-3 {
+  background: url("../img/parket/swich-border-3.png") no-repeat top center;
+}
+
+#main-products .switcher-wrap .switcher ul li.active .slide-4,
+#main-products .switcher-wrap .switcher ul li:hover .slide-4 {
+  background: url("../img/parket/swich-border-4.png") no-repeat top center;
+}
+
+#main-products .switcher-wrap .switcher ul li.active span,
+#main-products .switcher-wrap .switcher ul li:hover span {
+  display: block;
+  margin-top: -15px;
+  color: #f19f00;
+  font-weight: bold;
+  text-align: left;
+}
+
+#main-products .switcher-wrap .switcher ul li .slide-1 {
+  padding: 3px 0 0px 6px;
+}
+
+#main-products .switcher-wrap .switcher ul li .slide-2 {
+  padding: 3px 0px 0 7px;
+}
+
+#main-products .switcher-wrap .switcher ul li .slide-3 {
+  padding: 3px 7px 0 0;
+}
+
+#main-products .switcher-wrap .switcher ul li .slide-4 {
+  padding: 3px 14px 0 0;
+}
+
+#main-products .switcher-wrap .switcher ul li span {
+  display: none;
+}
+
+#main-products .switcher-wrap .switcher ul li a {
+  display: block;
+}
+
+#main-products .content-wrap {
+  min-height: 500px;
+}
+
+#main-products .wrapper {
+  margin-top: -80px;
+}
+
+#main-products .tab-content {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 55px;
+}
+
+#main-products .tabs-wrap {
+  margin-top: 15px;
+}
+
+#main-products .tabs-wrap .tabs {
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+}
+
+#main-products .tabs-wrap .tabs .tab {
+  background-image: url("../img/parket/braun-button-bg.png");
+  color: #fff;
+  height: 26px;
+  line-height: 26px;
+  font-size: 16px;
+  padding: 0 5px 0 15px;
+  margin-bottom: 9px;
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#main-products .tabs-wrap .tab-item {
+  display: none;
+}
+
+#main-products .tabs-wrap .tab-item h3 {
+  color: #fff;
+  font-size: 22px;
+}
+
+#main-products .tabs-wrap .owl-carousel .owl-item img {
+  width: auto;
+  margin: 0 auto;
+}
+
+#main-products .tabs-wrap .owl-prev,
+#main-products .tabs-wrap .owl-next,
+#main-products .tabs-wrap .owl-prev:hover,
+#main-products .tabs-wrap .owl-next:hover {
+  width: 43px;
+  height: 36px;
+  background-image: url("../img/parket/controls.png");
+  position: absolute;
+  top: 36%;
+  margin-top: -20px;
+  border-radius: 0;
+}
+
+#main-products .tabs-wrap .owl-theme .owl-dots .owl-dot span {
+  background: #593720;
+  width: 15px;
+  height: 15px;
+  margin: 5px 3px;
+}
+
+#main-products .tabs-wrap .owl-theme .owl-dots .owl-dot.active span, #main-products .tabs-wrap .owl-theme .owl-dots .owl-dot:hover span {
+  background: #d2831e;
+}
+
+#main-products .tabs-wrap .owl-prev {
+  background-position: 0 0;
+  left: 45px;
+}
+
+#main-products .tabs-wrap .owl-next {
+  background-position: 42px 0;
+  right: 45px;
+}
+
+#main-products .tabs-wrap .owl-theme .owl-controls .owl-nav [class*=owl-] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  font-size: 0;
+}
+
+#main-products .tabs-wrap .tab-item:first-child {
+  display: block;
+}
+
+#main-products .visual {
+  margin: 0;
+  padding: 0;
+}
+
+#main-products .visual .ball {
+  position: absolute;
+  z-index: 2000;
+  top: 22%;
+  left: 45%;
+}
+
+#main-products .visual .active, #main-products .visual .full_image {
+  display: block;
+}
+
+#main-products .visual li {
+  list-style-type: none;
+  display: none;
+}
+
+#main-products .visual li .floor {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.tab:hover {
+  background: url("../img/parket/orange-button-bg.png") !important;
+}
+
+.tabs .active {
+  background: url("../img/parket/button-arrow.png") no-repeat 97% center, url("../img/parket/orange-button-bg.png") !important;
+}
+
+.work-img-box .buttons-wrap {
+  width: 110px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.work-img-box a {
+  height: 22px;
+  line-height: 22px;
+  background: url("../img/parket/orange-button-bg.png");
+  color: #fff;
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 ::-webkit-input-placeholder {
@@ -519,10 +786,44 @@ footer span {
   font-size: 14px;
 }
 
+#lentan-fix .product-wrap {
+  margin-top: -31%;
+}
+
+#gallery {
+  background-image: url("../img/gallery/gallery-bg.jpg");
+}
+
+#gallery #gallery-wrap {
+  width: 625px;
+  float: right;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+#gallery #gallery-wrap img {
+  margin: 4px;
+}
+
+#gallery .logo {
+  position: absolute;
+  left: 13%;
+  top: 15%;
+}
+
 .hidden {
   display: none;
 }
 
 .clear {
   clear: both;
+}
+
+.scroll-pane {
+  height: 563px;
+  overflow: auto;
+}
+
+.scroll-pane:focus {
+  outline: none;
 }

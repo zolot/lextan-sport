@@ -172,7 +172,7 @@ footer
 			padding: 15px 40px
 	p 
 		line-height: 26px
-#products, #polish, #contacts
+#products, #polish, #contacts, #gallery
 	background-position: center
 	position: relative	
 	color: #fff
@@ -186,6 +186,22 @@ footer
 	background-image: url("../img/contacts/contacts-bg.jpg")
 	background-position: center bottom
 	position: relative
+	.bred-wrap
+		position: absolute
+		bottom: 10%
+		left: 18%
+		width: 15%
+		text-align: center
+		img 
+			display: inline-block
+		.bred-1
+			width: 58%
+		.bred-2 
+			width: 39%
+			vertical-align: 150%
+		.bred-3
+			width: 75%	
+			margin-top: -12px
 	.left-cosmonaut, .right-cosmonaut
 		position: absolute
 	.left-cosmonaut
@@ -208,6 +224,7 @@ footer
 		box-sizing: border-box
 		color: #fff
 		margin-bottom: 60px
+		overflow: hidden
 		.contacts
 			width: 205px
 			display: inline-block
@@ -277,18 +294,18 @@ footer
 
 	.jspContainer
 		width: 100% !important
-		height: 100% !important
+		height: 95% !important
 	.jspPane
 		width: auto !important
 	.jspVerticalBar
-		height: 100% !important
+		height: 95% !important
 		border: 1px #ec880a solid
 		background: transparent !important
 		width: 8px
 		padding: 0 1px
 		text-align: center
+		overflow: hidden
 	.jspTrack
-		height: 490px !important
 		background: transparent !important
 	.jspDrag
 		background: #ec880a
@@ -329,12 +346,167 @@ footer
 					margin-top: -20px
 					margin-left: 20px
 
-#main-products, #parket
+#main-products, #parket, #lentan-fix
 	header
 		background-image: url("../img/main/nav-bg.png")
 	footer
 		background-color: #452b0e
 		color: #fff
+#main-products, #lentan-fix 
+	background-image: url("../img/parket/wood-texture.jpg")
+	.gym
+		width: 100%
+#main-products
+	.switcher-wrap
+		min-height: 100px 
+		text-align: center
+		margin-top: -30px
+		.switcher
+			position: absolute
+			left: 50%
+			margin-left: -110px
+			z-index: 1500
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+				li 
+					float: left
+					&.active 
+						display: block
+					&.active,
+					&:hover
+						.slide-1
+							background: url("../img/parket/swich-border-1.png")  no-repeat top center
+						.slide-2
+							background: url("../img/parket/swich-border-2.png") no-repeat top center
+						.slide-3
+							background: url("../img/parket/swich-border-3.png") no-repeat top center
+						.slide-4
+							background: url("../img/parket/swich-border-4.png") no-repeat top center
+						span
+							display: block
+							margin-top: -15px
+							color: #f19f00
+							font-weight: bold
+							text-align: left
+					.slide-1
+						padding: 3px 0 0px 6px
+					.slide-2
+						padding: 3px 0px 0 7px
+					.slide-3
+						padding: 3px 7px 0 0
+					.slide-4
+						padding: 3px 14px 0 0
+					span
+						display: none
+					a 
+						display: block
+	.content-wrap
+		min-height: 500px
+		// height: 563px
+	.wrapper
+		margin-top: -80px
+	.tab-content
+		text-align: center
+		margin-bottom: 60px
+		padding-top: 55px 
+	.tabs-wrap 
+		margin-top: 15px
+		.tabs
+			width: 193px
+			position: absolute
+			z-index: 1000
+			.tab
+				background-image: url("../img/parket/braun-button-bg.png")
+				color: #fff 
+				height: 26px
+				line-height: 26px
+				font-size: 16px
+				padding: 0 5px 0 15px
+				margin-bottom: 9px
+				border-radius: 5px
+				width: 100%
+				display: block
+				cursor: pointer
+				box-sizing: border-box
+
+		.tab-item 
+			display: none
+			h3 
+				color: #fff
+				font-size: 22px
+		.owl-carousel .owl-item img
+			width: auto 
+			margin: 0 auto
+		.owl-prev, 
+		.owl-next, 
+		.owl-prev:hover, 
+		.owl-next:hover 
+			width: 43px
+			height: 36px
+			background-image: url("../img/parket/controls.png")
+			position: absolute
+			top: 36%
+			margin-top: -20px
+			border-radius: 0
+		.owl-theme .owl-dots .owl-dot span
+			background: #593720
+			width: 15px
+			height: 15px
+			margin: 5px 3px
+		.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span 
+			background: #d2831e
+		.owl-prev
+			background-position: 0 0
+			left: 45px
+		.owl-next
+			background-position: 42px 0
+			right: 45px
+		.owl-theme .owl-controls .owl-nav [class*=owl-] 
+			background-color: transparent
+			margin: 0
+			padding: 0
+			opacity: 1
+			font-size: 0
+		.tab-item:first-child 
+    		display: block
+	.visual
+		margin: 0
+		padding: 0 
+		.ball
+			position: absolute
+			z-index: 2000
+			top: 22%
+			left: 45%
+		.active, .full_image 
+			display: block
+		li 
+			list-style-type: none
+			display: none
+			.floor
+				position: absolute
+				top: 0
+				width: 100%
+.tab:hover
+	background: url("../img/parket/orange-button-bg.png")!important
+.tabs .active
+	background: url("../img/parket/button-arrow.png") no-repeat 97% center, url("../img/parket/orange-button-bg.png") !important
+.work-img-box 
+	.buttons-wrap
+		width: 110px
+		position: absolute
+		right: 0
+		top: 0
+	a 
+		height: 22px
+		line-height: 22px
+		background: url("../img/parket/orange-button-bg.png")
+		color: #fff 
+		display: block
+		margin-bottom: 12px
+		text-align: center
+		border-radius: 5px
 ::-webkit-input-placeholder
 	color: #4f2812 
 	font-size: 14px 
@@ -347,9 +519,32 @@ footer
 :-ms-input-placeholder
 	color: #4f2812 
 	font-size: 14px 
-
-
+#lentan-fix 
+	.product-wrap
+		margin-top: -31%
+#gallery
+	background-image: url("../img/gallery/gallery-bg.jpg")
+	#gallery-wrap
+		width: 625px
+		float: right
+		margin-right: 5%
+		margin-top: 5%
+		img 
+			margin: 4px
+	.logo
+		position: absolute
+		left: 13%
+		top: 15%
 .hidden
 	display: none
 .clear
 	clear: both
+
+.scroll-pane
+	// width: 100%;
+	height: 563px
+	overflow: auto
+
+.scroll-pane:focus	
+	outline: none
+
