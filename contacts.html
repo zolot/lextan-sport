@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="libs/jScrollPane/jquery.jscrollpane.css"  media="all" />
+    <link rel="stylesheet" href="libs/parallax/jquery.parallax.css"  media="all" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
@@ -37,50 +38,50 @@
         </header>
         <img src="img/contacts/left-cosmonaut.png" class="left-cosmonaut">
         <img src="img/contacts/right-cosmonaut.png" class="right-cosmonaut">
-        <div class="bred-wrap">
-            <img src="img/contacts/bred-1.png" class="bred-1">
-            <img src="img/contacts/bred-2.png" class="bred-2">
-            <img src="img/contacts/bred-3.png" class="bred-3">
+        <div class="bred-wrap" style="height: 200px;">
+            <img class="parallax-layer bred-1" src="img/contacts/bred-1.png">
+            <img class="parallax-layer bred-2" src="img/contacts/bred-2.png">
+            <img class="parallax-layer bred-3" src="img/contacts/bred-3.png">
         </div>
         <div class="content-wrap">
             <img src="img/logo.png" class="logo">
             <div class="contacts-info-wrap ">
-            <div class="scroll-pane">
-                <h2>Наш адрес:</h2>
-                <div class="contacts">
-                    <p class="adress">Украина 49000 <br>  г. Днепропетровск <br>ул. Лениградская, 20 оф. 22</p>
-                    <p>Тел | факс: +38 044 360 6 111</p>
-                    <p><span class="ks"></span>+38 096 273 6 111</p>
-                    <p><span class="mts"></span>+38 066 273 6 111</p>
-                    <p><span class="life"></span>+38 063 273 6 111</p>
-                    <p><span class="it"></span>+38 094 925 3 111</p>
-                </div>
-                <div class="map-wrap">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.0933538969975!2d35.03673611957397!3d48.47392293839948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2f1c7f3542f%3A0xf958e6b2087584b6!2z0LLRg9C7LiDQm9C10L3RltC90LPRgNCw0LTRgdGM0LrQsCwgMjAsINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQuiwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1442431594296" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <div class="clear"></div>
-                <h2>Отправить письмо:</h2>
-                <form>
-                    <div class="left-form-wrap">
-                        <input type="text" placeholder="Ваш e-mail:">
-                        <input type="text" placeholder="Ваше имя:">
-                        <input type="text" placeholder="Ваш телефон:">
+                <div class="scroll-pane">
+                    <h2>Наш адрес:</h2>
+                    <div class="contacts">
+                        <p class="adress">Украина 49000 <br>  г. Днепропетровск <br>ул. Лениградская, 20 оф. 22</p>
+                        <p>Тел | факс: +38 044 360 6 111</p>
+                        <p><span class="ks"></span>+38 096 273 6 111</p>
+                        <p><span class="mts"></span>+38 066 273 6 111</p>
+                        <p><span class="life"></span>+38 063 273 6 111</p>
+                        <p><span class="it"></span>+38 094 925 3 111</p>
                     </div>
-                    <textarea name="message" placeholder="Сообщение нам:"></textarea>
-                    <div class="button-wrap">
-                        <button>Написать нам</button>
+                    <div class="map-wrap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.0933538969975!2d35.03673611957397!3d48.47392293839948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2f1c7f3542f%3A0xf958e6b2087584b6!2z0LLRg9C7LiDQm9C10L3RltC90LPRgNCw0LTRgdGM0LrQsCwgMjAsINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQuiwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1442431594296" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                </form>
-                <p>контакты контакты контакты контакты контакты </p>
-                <p>контакты контакты контакты контакты контакты</p>
-                <p>контакты контакты контакты контакты контакты</p>
-                <p>контакты контакты контакты контакты контакты</p>
-                <p>контакты контакты контакты контакты контакты</p>
-                <p>контакты контакты контакты контакты контакты</p>
-                <p>контакты контакты контакты контакты контакты</p>
-                <p>контакты контакты контакты контакты контакты</p>
-                <p>контакты контакты контакты контакты контакты</p>
-            </div>
+                    <div class="clear"></div>
+                    <h2>Отправить письмо:</h2>
+                    <form>
+                        <div class="left-form-wrap">
+                            <input type="text" placeholder="Ваш e-mail:">
+                            <input type="text" placeholder="Ваше имя:">
+                            <input type="text" placeholder="Ваш телефон:">
+                        </div>
+                        <textarea name="message" placeholder="Сообщение нам:"></textarea>
+                        <div class="button-wrap">
+                            <button>Написать нам</button>
+                        </div>
+                    </form>
+                    <p>контакты контакты контакты контакты контакты </p>
+                    <p>контакты контакты контакты контакты контакты</p>
+                    <p>контакты контакты контакты контакты контакты</p>
+                    <p>контакты контакты контакты контакты контакты</p>
+                    <p>контакты контакты контакты контакты контакты</p>
+                    <p>контакты контакты контакты контакты контакты</p>
+                    <p>контакты контакты контакты контакты контакты</p>
+                    <p>контакты контакты контакты контакты контакты</p>
+                    <p>контакты контакты контакты контакты контакты</p>
+                </div>
             </div>
             <div class="clear"></div>
         </div>
@@ -89,7 +90,7 @@
         </footer>
     </div>
     
-    <div class="hidden"></div>
+    
 
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -103,7 +104,7 @@
     <script src="libs/jScrollPane/mwheelIntent.js"></script>
     <script src="libs/jScrollPane/jquery.jscrollpane.min.js"></script>
     <script src="libs/owl/owl.carousel.min.js"></script>
-    <script src='libs/jquery.photobox.js'></script>
+    <script src="libs/parallax/jquery.parallax.js"></script>
     <script src="js/common.js"></script>
 
     <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->

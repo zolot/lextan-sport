@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 	function wResize() {
-			$("#main, #about-us, #products, #polish, #contacts, #parket, #main-products, #lentan-fix, #gallery").css("min-height", $(window).height());
-
+		$("#main, #about-us, #products, #polish, #contacts, #parket, #main-products, #lentan-fix, #gallery").css("min-height", $(window).height());
+		$("#gallery").height($(document).height())
 	};
 	wResize();
 	$(window).resize(function() {
@@ -10,23 +10,16 @@ $(document).ready(function() {
 	});
 	
 	$('.scroll-pane').jScrollPane({
-		// showArrows: true
 	});
 
-	// $("#owl-demo2").owlCarousel(params);
-	// $("#owl-demo3").owlCarousel(params);
-	// $("#owl-demo4").owlCarousel(params);
 	var params = {
         loop : true,
         nav : true,
-        // "singleItem:true" is a shortcut for:
         items : 1, 
         itemsDesktop : false,
         itemsDesktopSmall : false,
         itemsTablet: false,
         itemsMobile : false
-        // singleItem : true,
-        // items: 
     }
     $("#owl-demo1").owlCarousel(params);
 
@@ -36,9 +29,6 @@ $(document).ready(function() {
 		$("#owl-demo"+($(this).index()+1)).owlCarousel(params);
 
 	}).eq(0).addClass("active");
-
-
-	// $("#owl-demo1").owlCarousel(params);
 
 
     var $switcher_lis = $(".switcher li");
@@ -57,35 +47,17 @@ $(document).ready(function() {
     	prev = cur_index;
     });
 
-    	var numOfImages = window.location.search ? parseInt(window.location.search.match(/\d+$/)[0]) : 70,
-    		gallery = $('#gallery'),
-    		videos = [
-    			{
-    				title: "Victoria's Secret",
-    				url: "http://player.vimeo.com/video/8974462?byline=0&portrait=0",
-    				thumb: "http://b.vimeocdn.com/ts/432/699/43269900_100.jpg"
-    			},
-    			{
-    				title: "PEOPLE ARE AWESOME 2014",
-    				url: "https://www.youtube.com/watch?v=LVn8ei8d4iU",
-    				thumb: "http://img.youtube.com/vi/LVn8ei8d4iU/0.jpg"
-    			},
-    			{
-    				title: "Biting Elbows - 'Bad Motherfucker' Official Music Video",
-    				url: "http://player.vimeo.com/video/62092214?byline=0&portrait=0",
-    				thumb: "http://b.vimeocdn.com/ts/431/797/431797120_100.jpg"
-    			}
-    		];
- 		
- 		$('#gallery-wrap').photobox('a',{time:0});
+	// Declare parallax on layers
+	$('.parallax-layer').parallax({
+	    xparallax: '10px',
+	    yparallax: '10px',
+	}, {
+	    xparallax: '50px',
+	    yparallax: '50px',
 
- 		$('.buttons-wrap').photobox('a[rel=video]', { 
- 			time:0,
- 			single: true
-		});
- 		$('#pbOverlay').click(function(e) {
- 			e.preventDefault();
-			window._photobox.close();
- 		})
-
-});
+	}, {
+	    xparallax: '30px',
+	    yparallax: '30px',
+	}
+	);
+});	

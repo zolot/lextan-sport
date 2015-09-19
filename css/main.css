@@ -281,8 +281,8 @@ footer span {
 
 #contacts .bred-wrap {
   position: absolute;
-  bottom: 10%;
-  left: 18%;
+  bottom: 19%;
+  left: 23%;
   width: 15%;
   text-align: center;
 }
@@ -293,16 +293,20 @@ footer span {
 
 #contacts .bred-wrap .bred-1 {
   width: 58%;
+  left: 0 !important;
+  top: 36% !important;
 }
 
 #contacts .bred-wrap .bred-2 {
   width: 39%;
-  vertical-align: 150%;
+  top: 17% !important;
 }
 
 #contacts .bred-wrap .bred-3 {
   width: 75%;
   margin-top: -12px;
+  top: 100% !important;
+  left: 10% !important;
 }
 
 #contacts .left-cosmonaut, #contacts .right-cosmonaut {
@@ -462,6 +466,10 @@ footer span {
 #contacts .jspDrag {
   background: #ec880a;
   border-radius: 5px;
+}
+
+#contacts .pbWrapper {
+  display: none !important;
 }
 
 #parket {

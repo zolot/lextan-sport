@@ -80,14 +80,6 @@
 
      </div>
 
-    
-
-
-<!--         <div id='wrap'>
-            <div class='main'>
-            <ul id='gallery'></ul>
-        </div> -->
-
         <footer>
             <span> © LextanSport.com 2015 </span>
         </footer>
@@ -108,7 +100,23 @@
     <script src="libs/jScrollPane/jquery.jscrollpane.min.js"></script>
     <script src="libs/owl/owl.carousel.min.js"></script>
     <script src='libs/jquery.photobox.js'></script>
+    <script src="libs/parallax/jquery.parallax.js"></script>
     <script src="js/common.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('#gallery-wrap').photobox('a',{time:0});
+
+        $('.buttons-wrap').photobox('a[rel=video]', { 
+            time:0,
+            single: true
+        });
+        $('#pbOverlay').click(function(e) {
+            e.preventDefault();
+            window._photobox.close();
+        })
+    });
+    </script>
     <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
     <!-- Google Analytics counter --><!-- /Google Analytics counter -->
     
