@@ -97,6 +97,49 @@ footer span {
   background-image: url("../img/main/main-bg.png");
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+}
+
+#main .leaf {
+  position: absolute;
+}
+
+#main .leaf img {
+  height: inherit;
+  border: none;
+  width: 100%;
+}
+
+#main .leaf1 {
+  width: 15%;
+}
+
+#main .leaf2 {
+  width: 14%;
+}
+
+#main .leaf2 {
+  width: 13%;
+}
+
+#main .leaf4 {
+  width: 5%;
+}
+
+#main .leaf5 {
+  width: 4%;
+}
+
+#main .leaf6 {
+  width: 9%;
+}
+
+#main .leaf7 {
+  width: 4%;
+}
+
+#main .leaf8 {
+  width: 3%;
 }
 
 #main footer {
@@ -135,6 +178,13 @@ footer span {
   width: 100%;
   height: 100%;
   top: 0;
+}
+
+#main .ball {
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  width: 15%;
 }
 
 #about-us {
